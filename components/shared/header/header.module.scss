@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 0.1rem solid grey;
+}
+.navBar {
+  display: flex;
+  width: 90vw;
+  min-height: 10vh;
+  margin: auto;
+
+  a {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    font-size: 3rem;
+    gap: 1rem;
+  }
+}
