@@ -18,6 +18,7 @@ const Header = () => {
           />
           <span className={styles.appName}>{APP_NAME}</span>
         </Link>
+
         <ul className={styles.buttonContainer}>
           {" "}
           <li>
