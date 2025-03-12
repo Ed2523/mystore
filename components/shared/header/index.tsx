@@ -30,7 +30,7 @@ const Header = () => {
             {" "}
             <Link href='/sign-idn'>
               <Person />
-              Sign in
+              <span>Sign in</span>
             </Link>
           </li>
         </ul>
