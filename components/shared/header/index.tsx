@@ -1,7 +1,6 @@
-import { ShoppingCart, UserIcon } from "lucide-react";
+import { ShoppingCart, Person } from "@mui/icons-material";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
 import styles from "./header.module.scss";
 
@@ -17,8 +16,24 @@ const Header = () => {
             height={48}
             width={48}
           />
-          <span>{APP_NAME}</span>
+          <span className={styles.appName}>{APP_NAME}</span>
         </Link>
+        <ul className={styles.buttonContainer}>
+          {" "}
+          <li>
+            <Link href='/cart'>
+              <ShoppingCart />
+              <span>Cart</span>
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link href='/sign-idn'>
+              <Person />
+              Sign in
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );
